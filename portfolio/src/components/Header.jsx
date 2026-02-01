@@ -16,11 +16,11 @@ function Header() {
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
+    { id: 'education', label: 'Education' },
     { id: 'experience', label: 'Experience' },
     { id: 'contact', label: 'Contact' },
   ];
   return (
-    <div>
       <header className="header">
       <div className="header-container">
         <div className="header-content">
@@ -65,7 +65,6 @@ function Header() {
         )}
       </div>
     </header>
-    </div>
   )
 }
 

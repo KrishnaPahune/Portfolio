@@ -7,6 +7,7 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Skills from './components/Skills.jsx'
 import Experience from './components/Experience.jsx' 
+import Education from './components/Education.jsx'
 export default function App() {
   return (
     <div className="app">
@@ -16,6 +17,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Education />
         <Experience />
         <Contact />
       </main>
