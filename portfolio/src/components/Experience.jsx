@@ -4,20 +4,19 @@ function Experience() {
      const experiences = [
     {
       role: 'Frontend Development Intern',
-      company: 'Tech Solutions Pvt. Ltd.',
-      duration: 'Jun 2025 - Aug 2025',
+      company: 'EISystems Technologies Pvt. Ltd.',
+      duration: 'Sep 2024 – Oct 2024',
       description: [
-        'Developed responsive UI components using React and Tailwind CSS',
-        'Collaborated with design team to implement user-friendly interfaces',
+        'Developed responsive web interfaces using HTML, CSS, JavaScript, Bootstrap, and React.js, focusing on reusable components and clean UI structure.',
       ],
     },
     {
-      role: 'Web Development Trainee',
-      company: 'Digital Academy',
-      duration: 'Jan 2025 - Mar 2025',
+      role: 'Python Developer Intern',
+      company: 'Sumago Infotech Pvt. Ltd.',
+      duration: 'Dec 2024 – Jan 2025',
       description: [
-        'Completed intensive training in modern web development technologies',
-        'Built multiple projects including e-commerce and dashboard applications',
+        'Worked on core Python programming along with data processing and analysis using Pandas; collaborated on dashboards and reports using Power BI.',
+        'Recognized as Top Performer for strong technical learning and execution.',
       ],
     },
   ];

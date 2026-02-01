@@ -8,11 +8,25 @@ function Contact() {
     message: '',
   });
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-  };
+  e.preventDefault();
+
+  const { name, email, message } = formData;
+
+  const gmailURL =
+    `https://mail.google.com/mail/?view=cm&fs=1` +
+    `&to=krishnapahune4@gmail.com` +
+    `&su=${encodeURIComponent(`Portfolio Contact from ${name}`)}` +
+    `&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+
+  window.open(gmailURL, "_blank");
+
+  alert('Gmail opened. Please click Send to complete your message.');
+
+  setFormData({ name: '', email: '', message: '' });
+};
+
 
   const handleChange = (e) => {
     setFormData({
@@ -31,29 +45,29 @@ function Contact() {
             </p>
             <div className="contact-links">
               <a
-                href="mailto:krishna.pahune@example.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=krishnapahune4@gmail.com&su=Portfolio Contact"
                 className="contact-link"
               >
                 <Mail size={20} />
-                krishna.pahune@example.com
+                krishnapahune4@gmail.com
               </a>
               <a
-                href="https://linkedin.com/in/krishnapahune"
+                href="https://www.linkedin.com/in/krishna-pahune"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
               >
-                <Linkedin size={20} />
-                linkedin.com/in/krishnapahune
+              <Linkedin size={20} />
+                linkedin.com/in/krishna-pahune
               </a>
               <a
-                href="https://github.com/krishnapahune"
+                href="https://github.com/KrishnaPahune"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
               >
                 <Github size={20} />
-                github.com/krishnapahune
+                github.com/KrishnaPahune
               </a>
             </div>
           </div>
@@ -102,8 +116,9 @@ function Contact() {
               />
             </div>
             <button type="submit" className="form-button">
-              Send Message
+              Send via Gmail
             </button>
+            *Requires Gmail login
           </form>
         </div>
       </div>

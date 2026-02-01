@@ -1,7 +1,13 @@
 import './Hero.css';
 import { FileDown, ArrowRight } from 'lucide-react';
 function Hero() {
-  
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  }
   return (
     <section id="home" className="hero">
       <div className="hero-container">
@@ -24,7 +30,8 @@ function Hero() {
               <ArrowRight size={20} />
             </button>
             <a
-              href="#"
+              href="../public/resume.pdf"
+              download
               className="hero-button-secondary"
             >
               <FileDown size={20} />

@@ -3,21 +3,21 @@ import './Education.css'
 function Education() {
     const education = [
     {
-      degree: 'Bachelor of Engineering in Computer Science',
-      institution: 'ABC College of Engineering',
-      year: '2021 - 2025',
+      degree: 'Bachelor of Engineering in Information Technology',
+      institution: 'Pravara Rural Engineering College, Loni, Ahilyanagar, Maharashtra',
+      year: '2022 - 2026',
       percentage: 'CGPA: 8.5/10',
     },
     {
-      degree: 'Higher Secondary Certificate (HSC)',
-      institution: 'XYZ Junior College',
-      year: '2019 - 2021',
+      degree: 'Higher Secondary Certificate (HSC) | Science',
+      institution: 'Shri Muktanand Mahavidyalaya, Gangapur, Maharashtra',
+      year: '2021 - 2022',
       percentage: '85.5%',
     },
     {
       degree: 'Secondary School Certificate (SSC)',
-      institution: 'PQR High School',
-      year: '2019',
+      institution: 'Modern English Medium School, Gangapur, Maharashtra',
+      year: '2020',
       percentage: '88.2%',
     },
   ];
@@ -34,7 +34,7 @@ function Education() {
               </div>
               <div className="education-details">
                 <span className="education-year">{edu.year}</span>
-                <span className="education-percentage">{edu.percentage}</span>
+                {/* <span className="education-percentage">{edu.percentage}</span> */}
               </div>
             </div>
           ))}

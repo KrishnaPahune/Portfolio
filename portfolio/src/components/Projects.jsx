@@ -4,32 +4,46 @@ import './Projects.css'
 function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Product Page',
-      description: 'Responsive product page with cart functionality and dynamic pricing',
-      techStack: ['React', 'JavaScript', 'Tailwind CSS'],
-      githubUrl: '#',
-      liveUrl: '#',
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather app with location search and 5-day forecast',
-      techStack: ['React', 'API Integration', 'CSS'],
-      githubUrl: '#',
-      liveUrl: '#',
-    },
-    {
-      title: 'Task Manager App',
-      description: 'Todo application with CRUD operations and local storage',
-      techStack: ['React', 'JavaScript', 'LocalStorage'],
-      githubUrl: '#',
-      liveUrl: '#',
-    },
-    {
       title: 'Portfolio Website',
-      description: 'Personal portfolio showcasing projects and skills',
-      techStack: ['React', 'Tailwind CSS', 'Responsive Design'],
+      description: 'A personal portfolio website to showcase my projects and skills.',
+      techStack: ['React', 'CSS', 'HTML', 'JavaScript'],
       githubUrl: '#',
       liveUrl: '#',
+    },
+    {
+      title: 'Google Keep Clone',
+      description: 'User can view, add, update and delete notes.',
+      techStack: ['React', 'JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/KrishnaPahune/Projects/tree/f4153067fe2c6d05e2940d727a8c3a328718e96f/google-keep-clone',
+      liveUrl: 'https://google-keep-clone-tau.vercel.app/',
+    },
+    {
+      title: 'ShopEasy',
+      description: 'Developed a React-based e-commerce website with add-to-cart functionality and real-time cart count updates using state management.',
+      techStack: ['React', 'JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/KrishnaPahune/Projects/tree/f4153067fe2c6d05e2940d727a8c3a328718e96f/ShopEasy',
+      liveUrl: 'https://shopeasy-sand.vercel.app/',
+    },
+    {
+      title: 'Expresso',
+      description: 'Packers and Movers Website with responsive design and user-friendly interface.',
+      techStack: ['JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/KrishnaPahune/Projects/tree/f4153067fe2c6d05e2940d727a8c3a328718e96f/Expresso',
+      liveUrl: 'https://expresso-59mqlx2rb-krishna-gajanan-pahunes-projects.vercel.app/',
+    },
+    {
+      title: 'Alphabet Game',
+      description: 'An interactive game for children to learn the alphabet with visual and audio feedback.',
+      techStack: ['JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/KrishnaPahune/Projects/tree/f4153067fe2c6d05e2940d727a8c3a328718e96f/Alphabets%20Game',
+      liveUrl: 'https://alphabet-game-opal.vercel.app/',
+    },
+    {
+      title: 'Random Password Generator',
+      description: 'A web application that generates secure random passwords.',
+      techStack: ['JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/KrishnaPahune/Projects/tree/f4153067fe2c6d05e2940d727a8c3a328718e96f/Random%20password%20generater',
+      liveUrl: 'https://password-generator-gray-sigma.vercel.app/',
     },
   ];
   return (
