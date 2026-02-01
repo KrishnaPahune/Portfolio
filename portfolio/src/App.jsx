@@ -4,16 +4,24 @@ import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx' 
 import Header from './components/Header.jsx'
-function App() {
+import Footer from './components/Footer.jsx'
+import Skills from './components/Skills.jsx'
+import Experience from './components/Experience.jsx' 
+export default function App() {
   return (
-    <>
-    <Header />
-    <Hero />
-    <About />
-    <Projects />
-    <Contact />
-    </>
-  )
+    <div className="app">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+
